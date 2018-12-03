@@ -6,18 +6,20 @@ import csv
 def fileinputandwrite():
 	with open ("main.csv","r") as file:
 		with open("sample.csv","w") as file2:
+			lst = []
+			i=0
 			reader = csv.DictReader(file)
+			heads = reader.fieldnames
+			length = len(heads)
 			for row in reader:
-				file2.write(str(row))
-			for line in file:
-				line = line.split(',')
-				length = len(line)
 				for x in range(0,(length+1)):
 					if x % 2 ==0:
-						#For alternative rows
-						print(line[x]+",")
-	file.close()
-	file2.close()
+						key = heads[x]
+						file2.write(key+",")
+						file2.write(row[key]+",")
+			file2.write('\n')
 
+	file2.close()
+	file.close()
 
 
