@@ -10,7 +10,7 @@ from builtins import str
 
 
 def main(argv):
-    argv[0] = "input"
+
     switch(argv[0])
 
 
