@@ -1,0 +1,30 @@
+{
+  "donors" : [
+
+		{
+	
+		"name" : "hemanth",
+		"phonenum" : "9603799767",
+		"address" : "hyderabad",
+		"bloodtype" : "AB+"	
+
+      		},
+
+    		{
+		"name" : "vasudev",
+		"phonenum" : "900000001",
+		"address" : "vizag",
+		"bloodtype" : "AB+"	
+	
+    		},
+
+   		{
+		"name" : "mrunaynath",
+		"phonenum" : "9000000002",
+		"address" : "hyderabad",
+		"bloodtype" : "O+"
+   		 }
+
+  	    ]
+
+}
