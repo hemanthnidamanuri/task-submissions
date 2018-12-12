@@ -24,7 +24,7 @@ public class ConditionalLoops {
 			j++;
 		} while (j<=n);
 		
-		/*output of program  = 1,2,4,11,16,22,......*/
+		/*output of program  = 1,2,4,7,11,16,22,......*/
 	}
 
 	
