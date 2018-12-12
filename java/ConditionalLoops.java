@@ -51,7 +51,7 @@ public class ConditionalLoops {
 	
 	public void start_sequence() {
 		
-		/*Write a java program to print the following pattern
+		/*Write a java program to print the following pattern with for loop
 		 *Input n = 3
 		 */
 		
@@ -83,7 +83,6 @@ public class ConditionalLoops {
 			}
 			System.out.println(" ");
 		}
-		//Using while loop
 		//output :
 		
 //		*****
@@ -99,13 +98,68 @@ public class ConditionalLoops {
 		
 	}
 	
+	public void star_With_WhileLoop() {
+
+		/*Write a java program to print the following pattern with while loop
+		 *Input n = 3
+		 */
+		
+//		*****
+//		*
+//		*****
+//		**********
+//		**
+//		**********
+//		***************
+//		***
+//		***************
+
+
+		int n = 3;
+		int i = 1;
+		do {
+			int l = i*5;
+			int j = 1,k=1,m=0;
+			while (j<=l) {
+				System.out.print("*");
+				j++;
+			}
+			System.out.println(" ");
+			while (m<i) {
+				System.out.print("*");
+				m++;
+			}
+			System.out.println(" ");
+			while (k<=l) {
+				System.out.print("*");
+				k++;
+			}
+			System.out.println(" ");
+			i++;
+		} while (i<=n);
+
+		//output :
+		
+//		*****
+//		*
+//		*****
+//		**********
+//		**
+//		**********
+//		***************
+//		***
+//		***************
+		
+	}
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ConditionalLoops cl = new ConditionalLoops();
-//		cl.alphabet_series();
-//		cl.number_series();
+		cl.alphabet_series();
+		cl.number_series();
 		cl.start_sequence();
+		cl.star_With_WhileLoop();
 
 	}
 
