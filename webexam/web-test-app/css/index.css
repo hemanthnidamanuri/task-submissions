@@ -1,0 +1,35 @@
+
+body{
+	margin: 0;
+}
+
+#main-header{
+	background-color: lightblue;
+
+}
+
+#navbar ul{
+	padding-left:  900px; 
+	list-style: 0;
+}
+
+#navbar li{
+	display: inline;
+}
+
+#navbar a{
+
+	color: black;
+	text-decoration: none;
+	padding-right:  18px;
+	font-size: 15px;
+}
+
+#main-footer{
+	background-color: #333;
+	text-align: center;
+	color: #fff;
+	padding :20px;
+	margin-bottom: 0px;
+	margin-top: 470px;
+}
