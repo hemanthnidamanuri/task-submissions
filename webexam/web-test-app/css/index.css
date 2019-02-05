@@ -8,7 +8,7 @@ body{
 }
 
 #navbar ul{
-	padding-left:  900px; 
+	padding-left:  600px; 
 	list-style: 0;
 }
 
@@ -27,7 +27,7 @@ body{
 #main-footer{
 	background-color: #333;
 	text-align: center;
-	color: #fff;
+	color: white;
 	padding :20px;
 	margin-bottom: 0px;
 	margin-top: 470px;

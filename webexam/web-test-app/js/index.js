@@ -33,7 +33,7 @@ function ajx(){
         +"</br>"+myObj[x].address.zipcode+"</br>"+myObj[x].address.geo.lat+"</br>"+myObj[x].address.geo.lng+"</td>";
         txt += "<td>"+ myObj[x].phone + "</td>";
         txt += "<td>"+ myObj[x].website + "</td>";
-        txt += "<td>"+ myObj.company[x].name+"</br>" + myObj.company[x].catchPhrase+"</br>"
+        txt += "<td>"+ myObj[x].company.name+"</br>" + myObj[x].company.catchPhrase+"</br>"
         + myObj[x].company.bs+"</br>"+ "</td>";
         txt += "<td>"+ '<a href="employesDetails.html?id='+myObj[x].id+' ">view</a>' + "</td>" 
         txt += "</tr>"
