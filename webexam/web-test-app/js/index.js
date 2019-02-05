@@ -1,7 +1,7 @@
 
 function change(){
 	console.log("ok");
-	setTimeout( ajx,1000);
+	setTimeout( ajx,5000);
 }
 
 function ajx(){
@@ -29,10 +29,12 @@ function ajx(){
         txt += "<td>"+ myObj[x].name + "</td>";
         txt += "<td>"+ myObj[x].username + "</td>";
         txt += "<td>"+ myObj[x].email + "</td>";
-        txt += "<td>"+ myObj[x].address + "</td>";
+        txt += "<td>"+ myObj[x].address.street +"</br>"+myObj[x].address.suite+"</br>"+myObj[x].address.city
+        +"</br>"+myObj[x].address.zipcode+"</br>"+myObj[x].address.geo.lat+"</br>"+myObj[x].address.geo.lng+"</td>";
         txt += "<td>"+ myObj[x].phone + "</td>";
         txt += "<td>"+ myObj[x].website + "</td>";
-        txt += "<td>"+ myObj[x].company + "</td>";
+        txt += "<td>"+ myObj.company[x].name+"</br>" + myObj.company[x].catchPhrase+"</br>"
+        + myObj[x].company.bs+"</br>"+ "</td>";
         txt += "<td>"+ '<a href="employesDetails.html?id='+myObj[x].id+' ">view</a>' + "</td>" 
         txt += "</tr>"
       }
