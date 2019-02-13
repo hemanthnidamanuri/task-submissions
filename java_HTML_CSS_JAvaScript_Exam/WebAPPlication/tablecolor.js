@@ -26,6 +26,7 @@ function check() {
 	        for (c = 0, m = table.rows[r].cells.length; c < m; c++) {
 	            if (table.rows[r].cells[c].innerText == value) {
 	            	table.rows[r].cells[c].style.backgroundColor = "lightgreen";
+	            	break;
 	            } else if(value.length==1 && table.rows[r].cells[c].innerText != value){
 	            	document.getElementById("not").innerHTML = "Table doesnt consist given value";
 	            }
